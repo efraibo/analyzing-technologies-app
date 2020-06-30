@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-light bg-light d-flex justify-content-center">
+    <a class="navbar-brand text-primary" href="#">Analisador de sites públicos</a>
+  </nav>
+  <accordion>
+    <accordion-group heading="Clique para adicionar URL's dos sites">
+      <hr><br>
+      <span>Adicione os link's seguindo o seguinte padrão: <br>
+        <b><i>&lt;nome do orgão - link do website&gt;</i></b>
+      </span>
+      <hr><br>
+      <div class="force-to-the-down">
+        <tag-input
+          ngbTooltip="Adicione os links independentemente ou cole todos podendo ser separdos com vírgula, ponto e vírgula."
+          tooltipClass="my-custom-class" placement="bottom" [(ngModel)]="items" [addOnPaste]="true"
+          [separatorKeyCodes]="[13, 32, 188, 9, 191]" (onAdd)="onItemAdded($event)" (onRemove)="onItemRemove($event)"
+          [modelAsStrings]="true" [pasteSplitPattern]="splitPattern" [theme]="'bootstrap'">
+          <tag-input-dropdown [autocompleteItems]="items" [showDropdownIfEmpty]="true" [dynamicUpdate]="false">
+          </tag-input-dropdown>
+        </tag-input>
+      </div>
+    </accordion-group>
+  </accordion>
+</div>
