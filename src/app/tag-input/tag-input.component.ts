@@ -46,15 +46,15 @@ export class TagInputComponent implements OnInit {
     this.urls.splice(indexValue, 1);
   }
 
-  salvarAlteracao(template: any) {
-    // this.orgaoService.postEvento(new Orgao()).subscribe(
-    //   (novoEvento: Evento) => {
-    //     template.hide();
-    //     this.getEventos()
-    //     this.toastr.success('Inserido com Sucesso!');
-    //   }, error => {
-    //     this.toastr.error(`Erro ao inserir: ${error}`);
-    //   }
-    // );
+  salvarAlteracao() {
+    this.orgaoService.postEvento(this.orgaos).subscribe(
+      (novoEvento) => {
+        console.log("teste >>>>> ", novoEvento);
+        // this.toastr.success('Inserido com Sucesso!');
+      },
+      (error) => {
+        // this.toastr.error(`Erro ao inserir: ${error}`);
+      }
+    );
   }
 }

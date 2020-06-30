@@ -10,7 +10,7 @@ export class OrgaoService {
 
   constructor(private http: HttpClient) {}
 
-  postEvento(orgao: Orgao) {
-    return this.http.post(this.baseURL, orgao);
+  postEvento(orgaos: Orgao[]) {
+    return this.http.post(this.baseURL, orgaos);
   }
 }
