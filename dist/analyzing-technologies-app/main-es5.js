@@ -567,7 +567,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             return ctx.salvarAlteracao();
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Secondary");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Enviar");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
