@@ -47,10 +47,10 @@ export class TagInputComponent implements OnInit {
   }
 
   salvarAlteracao() {
+    console.log("Aqui...");
     this.orgaoService.postEvento(this.orgaos).subscribe(
       (novoEvento) => {
         console.log("teste >>>>> ", novoEvento);
-        // this.toastr.success('Inserido com Sucesso!');
       },
       (error) => {
         // this.toastr.error(`Erro ao inserir: ${error}`);

@@ -7,12 +7,13 @@ import { environment } from "src/environments/environment";
   providedIn: "root",
 })
 export class OrgaoService {
-  baseURL = "https://analyzing-technologies.herokuapp.com";
+  baseURL =
+    "https://analyzing-technologies.herokuapp.com";
 
   constructor(private http: HttpClient) {}
 
   postEvento(orgaos: Orgao[]) {
-    let url = this.baseURL + "/api/v1/orgaos";
+    this.baseURL = this.baseURL + "/api/v1/orgaos";
     return this.http.post(this.baseURL, orgaos);
   }
 }

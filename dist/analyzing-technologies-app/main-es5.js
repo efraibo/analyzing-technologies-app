@@ -320,7 +320,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(OrgaoService, [{
         key: "postEvento",
         value: function postEvento(orgaos) {
-          var url = this.baseURL + "/api/v1/orgaos";
+          this.baseURL = this.baseURL + "/api/v1/orgaos";
           return this.http.post(this.baseURL, orgaos);
         }
       }]);
@@ -469,8 +469,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "salvarAlteracao",
         value: function salvarAlteracao() {
+          console.log("Aqui...");
           this.orgaoService.postEvento(this.orgaos).subscribe(function (novoEvento) {
-            console.log("teste >>>>> ", novoEvento); // this.toastr.success('Inserido com Sucesso!');
+            console.log("teste >>>>> ", novoEvento);
           }, function (error) {// this.toastr.error(`Erro ao inserir: ${error}`);
           });
         }

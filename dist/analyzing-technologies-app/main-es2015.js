@@ -183,7 +183,7 @@ class OrgaoService {
         this.baseURL = "https://analyzing-technologies.herokuapp.com";
     }
     postEvento(orgaos) {
-        let url = this.baseURL + "/api/v1/orgaos";
+        this.baseURL = this.baseURL + "/api/v1/orgaos";
         return this.http.post(this.baseURL, orgaos);
     }
 }
@@ -256,9 +256,9 @@ class TagInputComponent {
         this.urls.splice(indexValue, 1);
     }
     salvarAlteracao() {
+        console.log("Aqui...");
         this.orgaoService.postEvento(this.orgaos).subscribe((novoEvento) => {
             console.log("teste >>>>> ", novoEvento);
-            // this.toastr.success('Inserido com Sucesso!');
         }, (error) => {
             // this.toastr.error(`Erro ao inserir: ${error}`);
         });
