@@ -1,10 +1,10 @@
 const proxy = [{
   context: '/api',
-  target: 'https://analyzing-technologies.herokuapp.com',
+  target: 'https://localhost:8080',
   secure: true,
   //configuracao abaixo remove a api da URL
-  pathRewrite: {
-    '^-app': ''
-  },
+  // pathRewrite: {
+  //   '^-app': ''
+  // },
 }, ];
 module.exports = proxy;
