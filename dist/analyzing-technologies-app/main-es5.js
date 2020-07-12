@@ -327,8 +327,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(OrgaoService, [{
         key: "postEvento",
         value: function postEvento(orgaos) {
-          var baseURL = "/api/v1/orgaos";
-          return this.http.post(baseURL, orgaos);
+          this.baseURL = this.baseURL + "/api/v1/orgaos";
+          return this.http.post(this.baseURL, orgaos);
         }
       }]);
 

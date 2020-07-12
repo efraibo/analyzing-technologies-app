@@ -189,8 +189,8 @@ class OrgaoService {
         this.baseURL = "https://analyzing-technologies.herokuapp.com";
     }
     postEvento(orgaos) {
-        let baseURL = "/api/v1/orgaos";
-        return this.http.post(baseURL, orgaos);
+        this.baseURL = this.baseURL + "/api/v1/orgaos";
+        return this.http.post(this.baseURL, orgaos);
     }
 }
 OrgaoService.ɵfac = function OrgaoService_Factory(t) { return new (t || OrgaoService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
