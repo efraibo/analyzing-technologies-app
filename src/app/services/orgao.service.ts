@@ -14,7 +14,7 @@ export class OrgaoService {
   constructor(private http: HttpClient) {}
 
   postEvento(orgaos: Orgao[]) {
-    this.baseURL = this.baseURL + "/api/v1/orgaos";
-    return this.http.post(this.baseURL, orgaos);
+    let url = this.baseURL + "/api/v1/orgaos";
+    return this.http.post(url, orgaos);
   }
 }
