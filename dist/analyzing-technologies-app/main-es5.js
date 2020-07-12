@@ -316,19 +316,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var OrgaoService =
     /*#__PURE__*/
     function () {
+      // baseURL = "https://analyzing-technologies.herokuapp.com";
       // baseURL = "http://localhost:8080";
       function OrgaoService(http) {
         _classCallCheck(this, OrgaoService);
 
         this.http = http;
-        this.baseURL = "https://analyzing-technologies.herokuapp.com";
       }
 
       _createClass(OrgaoService, [{
         key: "postEvento",
         value: function postEvento(orgaos) {
-          this.baseURL = this.baseURL + "/api/v1/orgaos";
-          return this.http.post(this.baseURL, orgaos);
+          var baseURL = "/api/v1/orgaos";
+          return this.http.post(baseURL, orgaos);
         }
       }]);
 

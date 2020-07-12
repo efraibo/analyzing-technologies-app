@@ -183,14 +183,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class OrgaoService {
+    // baseURL = "https://analyzing-technologies.herokuapp.com";
     // baseURL = "http://localhost:8080";
     constructor(http) {
         this.http = http;
-        this.baseURL = "https://analyzing-technologies.herokuapp.com";
     }
     postEvento(orgaos) {
-        this.baseURL = this.baseURL + "/api/v1/orgaos";
-        return this.http.post(this.baseURL, orgaos);
+        let baseURL = "/api/v1/orgaos";
+        return this.http.post(baseURL, orgaos);
     }
 }
 OrgaoService.ɵfac = function OrgaoService_Factory(t) { return new (t || OrgaoService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
