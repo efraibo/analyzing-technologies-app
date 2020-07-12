@@ -183,10 +183,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class OrgaoService {
-    // baseURL = "https://analyzing-technologies.herokuapp.com";
     // baseURL = "http://localhost:8080";
     constructor(http) {
         this.http = http;
+        this.baseURL = "https://analyzing-technologies.herokuapp.com";
     }
     postEvento(orgaos) {
         let baseURL = "/api/v1/orgaos";

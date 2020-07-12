@@ -316,12 +316,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var OrgaoService =
     /*#__PURE__*/
     function () {
-      // baseURL = "https://analyzing-technologies.herokuapp.com";
       // baseURL = "http://localhost:8080";
       function OrgaoService(http) {
         _classCallCheck(this, OrgaoService);
 
         this.http = http;
+        this.baseURL = "https://analyzing-technologies.herokuapp.com";
       }
 
       _createClass(OrgaoService, [{
