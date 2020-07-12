@@ -84,12 +84,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
 /* harmony import */ var ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngx-bootstrap/accordion */ "./node_modules/ngx-bootstrap/__ivy_ngcc__/accordion/fesm2015/ngx-bootstrap-accordion.js");
 /* harmony import */ var ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-bootstrap/tooltip */ "./node_modules/ngx-bootstrap/__ivy_ngcc__/tooltip/fesm2015/ngx-bootstrap-tooltip.js");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/__ivy_ngcc__/fesm2015/ngx-toastr.js");
 
 
 
 
 
  // this is needed!
+
+
 
 
 
@@ -112,6 +115,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector
             _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot([]),
             ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_10__["AccordionModule"].forRoot(),
             ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__["TooltipModule"].forRoot(),
+            ngx_toastr__WEBPACK_IMPORTED_MODULE_12__["ToastrModule"].forRoot(),
             _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClientModule"],
             _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModule"],
         ]] });
@@ -119,7 +123,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector
         ngx_chips__WEBPACK_IMPORTED_MODULE_4__["TagInputModule"],
         _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"],
-        _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_10__["AccordionModule"], ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__["TooltipModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClientModule"],
+        _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_10__["AccordionModule"], ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__["TooltipModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_12__["ToastrModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClientModule"],
         _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
@@ -134,6 +138,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector
                     _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot([]),
                     ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_10__["AccordionModule"].forRoot(),
                     ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__["TooltipModule"].forRoot(),
+                    ngx_toastr__WEBPACK_IMPORTED_MODULE_12__["ToastrModule"].forRoot(),
                     _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClientModule"],
                     _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModule"],
                 ],
@@ -178,6 +183,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class OrgaoService {
+    // baseURL = "http://localhost:8080";
     constructor(http) {
         this.http = http;
         this.baseURL = "https://analyzing-technologies.herokuapp.com";
@@ -212,10 +218,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _models_orgao__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../models/orgao */ "./src/app/models/orgao.ts");
 /* harmony import */ var _services_orgao_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/orgao.service */ "./src/app/services/orgao.service.ts");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
-/* harmony import */ var ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-bootstrap/accordion */ "./node_modules/ngx-bootstrap/__ivy_ngcc__/accordion/fesm2015/ngx-bootstrap-accordion.js");
-/* harmony import */ var ngx_chips__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ngx-chips */ "./node_modules/ngx-chips/__ivy_ngcc__/fesm2015/ngx-chips.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/__ivy_ngcc__/fesm2015/ngx-toastr.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+/* harmony import */ var ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ngx-bootstrap/accordion */ "./node_modules/ngx-bootstrap/__ivy_ngcc__/accordion/fesm2015/ngx-bootstrap-accordion.js");
+/* harmony import */ var ngx_chips__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ngx-chips */ "./node_modules/ngx-chips/__ivy_ngcc__/fesm2015/ngx-chips.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+
 
 
 
@@ -226,8 +234,9 @@ __webpack_require__.r(__webpack_exports__);
 
 const _c0 = function () { return [13, 32, 188, 9, 191]; };
 class TagInputComponent {
-    constructor(orgaoService) {
+    constructor(orgaoService, toastr) {
         this.orgaoService = orgaoService;
+        this.toastr = toastr;
         this.items = [];
         this.urls = [];
         this.splitPattern = new RegExp("[,;]");
@@ -258,14 +267,14 @@ class TagInputComponent {
     salvarAlteracao() {
         console.log("Aqui...");
         this.orgaoService.postEvento(this.orgaos).subscribe((novoEvento) => {
-            console.log("teste >>>>> ", novoEvento);
+            this.toastr.success(`Valor(es) inserido(s) com sucesso: ${novoEvento}`);
         }, (error) => {
-            // this.toastr.error(`Erro ao inserir: ${error}`);
+            this.toastr.error(`Erro ao inserir: ${error}`);
         });
     }
 }
-TagInputComponent.ɵfac = function TagInputComponent_Factory(t) { return new (t || TagInputComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_orgao_service__WEBPACK_IMPORTED_MODULE_2__["OrgaoService"])); };
-TagInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TagInputComponent, selectors: [["app-tag-input"]], decls: 21, vars: 10, consts: [[1, "container-fluid"], [1, "navbar", "navbar-light", "bg-light", "d-flex", "justify-content-center"], ["href", "#", 1, "navbar-brand", "text-primary"], ["heading", "Clique para adicionar URL's dos sites"], [1, "force-to-the-down"], ["ngbTooltip", "Adicione os links independentemente ou cole todos podendo ser separdos com v\u00EDrgula, ponto e v\u00EDrgula.", "tooltipClass", "my-custom-class", "placement", "bottom", 3, "ngModel", "addOnPaste", "separatorKeyCodes", "modelAsStrings", "pasteSplitPattern", "theme", "ngModelChange", "onAdd", "onRemove"], [3, "autocompleteItems", "showDropdownIfEmpty", "dynamicUpdate"], ["type", "button", 1, "btn", "btn-secondary", 3, "click"]], template: function TagInputComponent_Template(rf, ctx) { if (rf & 1) {
+TagInputComponent.ɵfac = function TagInputComponent_Factory(t) { return new (t || TagInputComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_orgao_service__WEBPACK_IMPORTED_MODULE_2__["OrgaoService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_toastr__WEBPACK_IMPORTED_MODULE_3__["ToastrService"])); };
+TagInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TagInputComponent, selectors: [["app-tag-input"]], decls: 21, vars: 11, consts: [[1, "container-fluid"], [1, "navbar", "navbar-light", "bg-light", "d-flex", "justify-content-center"], ["href", "#", 1, "navbar-brand", "text-primary"], ["heading", "Clique para adicionar URL's dos sites"], [1, "force-to-the-down"], ["ngbTooltip", "Adicione os links independentemente ou cole todos podendo ser separdos com v\u00EDrgula, ponto e v\u00EDrgula.", "tooltipClass", "my-custom-class", "placement", "bottom", 3, "ngModel", "addOnPaste", "separatorKeyCodes", "modelAsStrings", "pasteSplitPattern", "theme", "secondaryPlaceholder", "ngModelChange", "onAdd", "onRemove"], [3, "autocompleteItems", "showDropdownIfEmpty", "dynamicUpdate"], ["type", "button", 1, "btn", "btn-primary", "mb2", 2, "margin-top", "9px", 3, "click"]], template: function TagInputComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nav", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "a", 2);
@@ -293,19 +302,19 @@ TagInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "tag-input-dropdown", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "button", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TagInputComponent_Template_button_click_19_listener() { return ctx.salvarAlteracao(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Enviar");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.items)("addOnPaste", true)("separatorKeyCodes", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c0))("modelAsStrings", true)("pasteSplitPattern", ctx.splitPattern)("theme", "bootstrap");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.items)("addOnPaste", true)("separatorKeyCodes", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c0))("modelAsStrings", true)("pasteSplitPattern", ctx.splitPattern)("theme", "bootstrap")("secondaryPlaceholder", "Adicione o link");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("autocompleteItems", ctx.items)("showDropdownIfEmpty", true)("dynamicUpdate", false);
-    } }, directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbNavbar"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_4__["AccordionComponent"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_4__["AccordionPanelComponent"], ngx_chips__WEBPACK_IMPORTED_MODULE_5__["TagInputComponent"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbTooltip"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgModel"], ngx_chips__WEBPACK_IMPORTED_MODULE_5__["TagInputDropdown"]], styles: [".force-to-the-bottom[_ngcontent-%COMP%] {\r\n  margin-top: 90vh;\r\n}\r\n\r\n.my-custom-class[_ngcontent-%COMP%]   .tooltip-inner[_ngcontent-%COMP%] {\r\n  background-color: darkgreen;\r\n  font-size: 125%;\r\n}\r\n\r\n.my-custom-class[_ngcontent-%COMP%]   .arrow[_ngcontent-%COMP%]::before {\r\n  border-top-color: darkgreen;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGFnLWlucHV0L3RhZy1pbnB1dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLGVBQWU7QUFDakI7O0FBQ0E7RUFDRSwyQkFBMkI7QUFDN0IiLCJmaWxlIjoic3JjL2FwcC90YWctaW5wdXQvdGFnLWlucHV0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9yY2UtdG8tdGhlLWJvdHRvbSB7XHJcbiAgbWFyZ2luLXRvcDogOTB2aDtcclxufVxyXG5cclxuLm15LWN1c3RvbS1jbGFzcyAudG9vbHRpcC1pbm5lciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogZGFya2dyZWVuO1xyXG4gIGZvbnQtc2l6ZTogMTI1JTtcclxufVxyXG4ubXktY3VzdG9tLWNsYXNzIC5hcnJvdzo6YmVmb3JlIHtcclxuICBib3JkZXItdG9wLWNvbG9yOiBkYXJrZ3JlZW47XHJcbn1cclxuIl19 */"] });
+    } }, directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbNavbar"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_5__["AccordionComponent"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_5__["AccordionPanelComponent"], ngx_chips__WEBPACK_IMPORTED_MODULE_6__["TagInputComponent"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbTooltip"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgModel"], ngx_chips__WEBPACK_IMPORTED_MODULE_6__["TagInputDropdown"]], styles: [".force-to-the-bottom[_ngcontent-%COMP%] {\r\n  margin-top: 90vh;\r\n}\r\n\r\n.my-custom-class[_ngcontent-%COMP%]   .tooltip-inner[_ngcontent-%COMP%] {\r\n  background-color: darkgreen;\r\n  font-size: 125%;\r\n}\r\n\r\n.my-custom-class[_ngcontent-%COMP%]   .arrow[_ngcontent-%COMP%]::before {\r\n  border-top-color: darkgreen;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGFnLWlucHV0L3RhZy1pbnB1dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLGVBQWU7QUFDakI7O0FBQ0E7RUFDRSwyQkFBMkI7QUFDN0IiLCJmaWxlIjoic3JjL2FwcC90YWctaW5wdXQvdGFnLWlucHV0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9yY2UtdG8tdGhlLWJvdHRvbSB7XHJcbiAgbWFyZ2luLXRvcDogOTB2aDtcclxufVxyXG5cclxuLm15LWN1c3RvbS1jbGFzcyAudG9vbHRpcC1pbm5lciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogZGFya2dyZWVuO1xyXG4gIGZvbnQtc2l6ZTogMTI1JTtcclxufVxyXG4ubXktY3VzdG9tLWNsYXNzIC5hcnJvdzo6YmVmb3JlIHtcclxuICBib3JkZXItdG9wLWNvbG9yOiBkYXJrZ3JlZW47XHJcbn1cclxuIl19 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TagInputComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -313,7 +322,7 @@ TagInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
                 templateUrl: "./tag-input.component.html",
                 styleUrls: ["./tag-input.component.css"],
             }]
-    }], function () { return [{ type: _services_orgao_service__WEBPACK_IMPORTED_MODULE_2__["OrgaoService"] }]; }, null); })();
+    }], function () { return [{ type: _services_orgao_service__WEBPACK_IMPORTED_MODULE_2__["OrgaoService"] }, { type: ngx_toastr__WEBPACK_IMPORTED_MODULE_3__["ToastrService"] }]; }, null); })();
 
 
 /***/ }),

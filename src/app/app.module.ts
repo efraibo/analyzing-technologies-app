@@ -1,4 +1,4 @@
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 
@@ -9,9 +9,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations"; 
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { TagInputComponent } from "./tag-input/tag-input.component";
 import { RouterModule, ROUTES } from "@angular/router";
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AccordionModule } from 'ngx-bootstrap/accordion';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { AccordionModule } from "ngx-bootstrap/accordion";
+import { TooltipModule } from "ngx-bootstrap/tooltip";
+import { ToastrModule } from "ngx-toastr";
 
 @NgModule({
   declarations: [AppComponent, TagInputComponent],
@@ -24,6 +25,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     RouterModule.forRoot([]),
     AccordionModule.forRoot(),
     TooltipModule.forRoot(),
+    ToastrModule.forRoot(),
     HttpClientModule,
     NgbModule,
   ],

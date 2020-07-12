@@ -204,7 +204,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ngx-bootstrap/tooltip */
-    "./node_modules/ngx-bootstrap/__ivy_ngcc__/tooltip/fesm2015/ngx-bootstrap-tooltip.js"); // this is needed!
+    "./node_modules/ngx-bootstrap/__ivy_ngcc__/tooltip/fesm2015/ngx-bootstrap-tooltip.js");
+    /* harmony import */
+
+
+    var ngx_toastr__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ngx-toastr */
+    "./node_modules/ngx-toastr/__ivy_ngcc__/fesm2015/ngx-toastr.js"); // this is needed!
 
 
     var AppModule = function AppModule() {
@@ -220,13 +226,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         return new (t || AppModule)();
       },
       providers: [],
-      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngx_chips__WEBPACK_IMPORTED_MODULE_4__["TagInputModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot([]), ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_10__["AccordionModule"].forRoot(), ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__["TooltipModule"].forRoot(), _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModule"]]]
+      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngx_chips__WEBPACK_IMPORTED_MODULE_4__["TagInputModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot([]), ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_10__["AccordionModule"].forRoot(), ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__["TooltipModule"].forRoot(), ngx_toastr__WEBPACK_IMPORTED_MODULE_12__["ToastrModule"].forRoot(), _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModule"]]]
     });
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](AppModule, {
         declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _tag_input_tag_input_component__WEBPACK_IMPORTED_MODULE_7__["TagInputComponent"]],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngx_chips__WEBPACK_IMPORTED_MODULE_4__["TagInputModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_10__["AccordionModule"], ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__["TooltipModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModule"]]
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngx_chips__WEBPACK_IMPORTED_MODULE_4__["TagInputModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_10__["AccordionModule"], ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__["TooltipModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_12__["ToastrModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModule"]]
       });
     })();
     /*@__PURE__*/
@@ -237,7 +243,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
           declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _tag_input_tag_input_component__WEBPACK_IMPORTED_MODULE_7__["TagInputComponent"]],
-          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngx_chips__WEBPACK_IMPORTED_MODULE_4__["TagInputModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot([]), ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_10__["AccordionModule"].forRoot(), ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__["TooltipModule"].forRoot(), _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModule"]],
+          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], ngx_chips__WEBPACK_IMPORTED_MODULE_4__["TagInputModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot([]), ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_10__["AccordionModule"].forRoot(), ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_11__["TooltipModule"].forRoot(), ngx_toastr__WEBPACK_IMPORTED_MODULE_12__["ToastrModule"].forRoot(), _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModule"]],
           providers: [],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]],
           schemas: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["CUSTOM_ELEMENTS_SCHEMA"]]
@@ -310,6 +316,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var OrgaoService =
     /*#__PURE__*/
     function () {
+      // baseURL = "http://localhost:8080";
       function OrgaoService(http) {
         _classCallCheck(this, OrgaoService);
 
@@ -395,25 +402,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var ngx_toastr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ngx-toastr */
+    "./node_modules/ngx-toastr/__ivy_ngcc__/fesm2015/ngx-toastr.js");
+    /* harmony import */
+
+
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @ng-bootstrap/ng-bootstrap */
     "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
     /* harmony import */
 
 
-    var ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ngx-bootstrap/accordion */
     "./node_modules/ngx-bootstrap/__ivy_ngcc__/accordion/fesm2015/ngx-bootstrap-accordion.js");
     /* harmony import */
 
 
-    var ngx_chips__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var ngx_chips__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ngx-chips */
     "./node_modules/ngx-chips/__ivy_ngcc__/fesm2015/ngx-chips.js");
     /* harmony import */
 
 
-    var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 
@@ -424,10 +437,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var TagInputComponent =
     /*#__PURE__*/
     function () {
-      function TagInputComponent(orgaoService) {
+      function TagInputComponent(orgaoService, toastr) {
         _classCallCheck(this, TagInputComponent);
 
         this.orgaoService = orgaoService;
+        this.toastr = toastr;
         this.items = [];
         this.urls = [];
         this.splitPattern = new RegExp("[,;]");
@@ -469,10 +483,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "salvarAlteracao",
         value: function salvarAlteracao() {
+          var _this = this;
+
           console.log("Aqui...");
           this.orgaoService.postEvento(this.orgaos).subscribe(function (novoEvento) {
-            console.log("teste >>>>> ", novoEvento);
-          }, function (error) {// this.toastr.error(`Erro ao inserir: ${error}`);
+            _this.toastr.success("Valor(es) inserido(s) com sucesso: ".concat(novoEvento));
+          }, function (error) {
+            _this.toastr.error("Erro ao inserir: ".concat(error));
           });
         }
       }]);
@@ -481,15 +498,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     TagInputComponent.ɵfac = function TagInputComponent_Factory(t) {
-      return new (t || TagInputComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_orgao_service__WEBPACK_IMPORTED_MODULE_2__["OrgaoService"]));
+      return new (t || TagInputComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_orgao_service__WEBPACK_IMPORTED_MODULE_2__["OrgaoService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_toastr__WEBPACK_IMPORTED_MODULE_3__["ToastrService"]));
     };
 
     TagInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: TagInputComponent,
       selectors: [["app-tag-input"]],
       decls: 21,
-      vars: 10,
-      consts: [[1, "container-fluid"], [1, "navbar", "navbar-light", "bg-light", "d-flex", "justify-content-center"], ["href", "#", 1, "navbar-brand", "text-primary"], ["heading", "Clique para adicionar URL's dos sites"], [1, "force-to-the-down"], ["ngbTooltip", "Adicione os links independentemente ou cole todos podendo ser separdos com v\xEDrgula, ponto e v\xEDrgula.", "tooltipClass", "my-custom-class", "placement", "bottom", 3, "ngModel", "addOnPaste", "separatorKeyCodes", "modelAsStrings", "pasteSplitPattern", "theme", "ngModelChange", "onAdd", "onRemove"], [3, "autocompleteItems", "showDropdownIfEmpty", "dynamicUpdate"], ["type", "button", 1, "btn", "btn-secondary", 3, "click"]],
+      vars: 11,
+      consts: [[1, "container-fluid"], [1, "navbar", "navbar-light", "bg-light", "d-flex", "justify-content-center"], ["href", "#", 1, "navbar-brand", "text-primary"], ["heading", "Clique para adicionar URL's dos sites"], [1, "force-to-the-down"], ["ngbTooltip", "Adicione os links independentemente ou cole todos podendo ser separdos com v\xEDrgula, ponto e v\xEDrgula.", "tooltipClass", "my-custom-class", "placement", "bottom", 3, "ngModel", "addOnPaste", "separatorKeyCodes", "modelAsStrings", "pasteSplitPattern", "theme", "secondaryPlaceholder", "ngModelChange", "onAdd", "onRemove"], [3, "autocompleteItems", "showDropdownIfEmpty", "dynamicUpdate"], ["type", "button", 1, "btn", "btn-primary", "mb2", 2, "margin-top", "9px", 3, "click"]],
       template: function TagInputComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -552,10 +569,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "button", 7);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TagInputComponent_Template_button_click_19_listener() {
@@ -567,19 +580,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
 
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](17);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.items)("addOnPaste", true)("separatorKeyCodes", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c0))("modelAsStrings", true)("pasteSplitPattern", ctx.splitPattern)("theme", "bootstrap");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.items)("addOnPaste", true)("separatorKeyCodes", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c0))("modelAsStrings", true)("pasteSplitPattern", ctx.splitPattern)("theme", "bootstrap")("secondaryPlaceholder", "Adicione o link");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("autocompleteItems", ctx.items)("showDropdownIfEmpty", true)("dynamicUpdate", false);
         }
       },
-      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbNavbar"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_4__["AccordionComponent"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_4__["AccordionPanelComponent"], ngx_chips__WEBPACK_IMPORTED_MODULE_5__["TagInputComponent"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbTooltip"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgModel"], ngx_chips__WEBPACK_IMPORTED_MODULE_5__["TagInputDropdown"]],
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbNavbar"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_5__["AccordionComponent"], ngx_bootstrap_accordion__WEBPACK_IMPORTED_MODULE_5__["AccordionPanelComponent"], ngx_chips__WEBPACK_IMPORTED_MODULE_6__["TagInputComponent"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbTooltip"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgModel"], ngx_chips__WEBPACK_IMPORTED_MODULE_6__["TagInputDropdown"]],
       styles: [".force-to-the-bottom[_ngcontent-%COMP%] {\r\n  margin-top: 90vh;\r\n}\r\n\r\n.my-custom-class[_ngcontent-%COMP%]   .tooltip-inner[_ngcontent-%COMP%] {\r\n  background-color: darkgreen;\r\n  font-size: 125%;\r\n}\r\n\r\n.my-custom-class[_ngcontent-%COMP%]   .arrow[_ngcontent-%COMP%]::before {\r\n  border-top-color: darkgreen;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGFnLWlucHV0L3RhZy1pbnB1dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLGVBQWU7QUFDakI7O0FBQ0E7RUFDRSwyQkFBMkI7QUFDN0IiLCJmaWxlIjoic3JjL2FwcC90YWctaW5wdXQvdGFnLWlucHV0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9yY2UtdG8tdGhlLWJvdHRvbSB7XHJcbiAgbWFyZ2luLXRvcDogOTB2aDtcclxufVxyXG5cclxuLm15LWN1c3RvbS1jbGFzcyAudG9vbHRpcC1pbm5lciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogZGFya2dyZWVuO1xyXG4gIGZvbnQtc2l6ZTogMTI1JTtcclxufVxyXG4ubXktY3VzdG9tLWNsYXNzIC5hcnJvdzo6YmVmb3JlIHtcclxuICBib3JkZXItdG9wLWNvbG9yOiBkYXJrZ3JlZW47XHJcbn1cclxuIl19 */"]
     });
     /*@__PURE__*/
@@ -595,6 +612,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }], function () {
         return [{
           type: _services_orgao_service__WEBPACK_IMPORTED_MODULE_2__["OrgaoService"]
+        }, {
+          type: ngx_toastr__WEBPACK_IMPORTED_MODULE_3__["ToastrService"]
         }];
       }, null);
     })();

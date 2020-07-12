@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { OrgaoService } from "../services/orgao.service";
 import { Orgao } from "../models/orgao";
+import { ToastrService } from "ngx-toastr";
 
 @Component({
   selector: "app-tag-input",
@@ -16,7 +17,10 @@ export class TagInputComponent implements OnInit {
 
   html = `<span class="text-white">Adicione os links independentemente ou cole todos podendo ser separdos com vírgula, espaço ou ponto e vírgula.</span>`;
 
-  constructor(private orgaoService: OrgaoService) {}
+  constructor(
+    private orgaoService: OrgaoService,
+    private toastr: ToastrService
+  ) {}
 
   ngOnInit() {}
 
@@ -50,10 +54,10 @@ export class TagInputComponent implements OnInit {
     console.log("Aqui...");
     this.orgaoService.postEvento(this.orgaos).subscribe(
       (novoEvento) => {
-        console.log("teste >>>>> ", novoEvento);
+        this.toastr.success(`Valor(es) inserido(s) com sucesso: ${novoEvento}`);
       },
       (error) => {
-        // this.toastr.error(`Erro ao inserir: ${error}`);
+        this.toastr.error(`Erro ao inserir: ${error}`);
       }
     );
   }

@@ -14,12 +14,14 @@
           ngbTooltip="Adicione os links independentemente ou cole todos podendo ser separdos com vírgula, ponto e vírgula."
           tooltipClass="my-custom-class" placement="bottom" [(ngModel)]="items" [addOnPaste]="true"
           [separatorKeyCodes]="[13, 32, 188, 9, 191]" (onAdd)="onItemAdded($event)" (onRemove)="onItemRemove($event)"
-          [modelAsStrings]="true" [pasteSplitPattern]="splitPattern" [theme]="'bootstrap'">
+          [modelAsStrings]="true" [pasteSplitPattern]="splitPattern" [theme]="'bootstrap'"
+          [secondaryPlaceholder]="'Adicione o link'">
           <tag-input-dropdown [autocompleteItems]="items" [showDropdownIfEmpty]="true" [dynamicUpdate]="false">
           </tag-input-dropdown>
         </tag-input>
       </div>
+      <button type="button" style="margin-top: 9px;" class="btn btn-primary mb2"
+        (click)="salvarAlteracao()">Enviar</button>
     </accordion-group>
   </accordion>
-  <button type="button" class="btn btn-secondary" (click)="salvarAlteracao()">Enviar</button>
 </div>

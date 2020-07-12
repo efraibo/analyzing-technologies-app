@@ -7,8 +7,9 @@ import { environment } from "src/environments/environment";
   providedIn: "root",
 })
 export class OrgaoService {
-  baseURL =
-    "https://analyzing-technologies.herokuapp.com";
+  baseURL = "https://analyzing-technologies.herokuapp.com";
+
+  // baseURL = "http://localhost:8080";
 
   constructor(private http: HttpClient) {}
 
