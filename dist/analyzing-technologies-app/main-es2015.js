@@ -267,7 +267,7 @@ class TagInputComponent {
     salvarAlteracao() {
         console.log("Aqui...");
         this.orgaoService.postEvento(this.orgaos).subscribe((novoEvento) => {
-            this.toastr.success(`Valor(es) inserido(s) com sucesso: ${novoEvento}`);
+            this.toastr.success(`Valor(es) inserido(s) com sucesso!`);
         }, (error) => {
             this.toastr.error(`Erro ao inserir: ${error}`);
         });

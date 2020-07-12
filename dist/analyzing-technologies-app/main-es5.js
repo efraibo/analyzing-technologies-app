@@ -487,7 +487,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           console.log("Aqui...");
           this.orgaoService.postEvento(this.orgaos).subscribe(function (novoEvento) {
-            _this.toastr.success("Valor(es) inserido(s) com sucesso: ".concat(novoEvento));
+            _this.toastr.success("Valor(es) inserido(s) com sucesso!");
           }, function (error) {
             _this.toastr.error("Erro ao inserir: ".concat(error));
           });

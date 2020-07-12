@@ -1,8 +1,9 @@
-const proxy = [
-  {
-    context: "/api/v1",
-    target: "https://analyzing-technologies.herokuapp.com",
-    pathRewrite: { "^/api/v1": "" },
+const proxy = [{
+  context: '/api',
+  target: 'https://analyzing-technologies.herokuapp.com',
+  secure: false,
+  pathRewrite: {
+    '^/api': ''
   },
-];
+}, ];
 module.exports = proxy;
